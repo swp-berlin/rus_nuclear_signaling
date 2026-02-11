@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Liviu Horovitz, Michal Smetana" />
+
+
+<title>Documentation Nuclear Escalation Dynamics</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Documentation Nuclear Escalation
+Dynamics</h1>
+<h4 class="author">Liviu Horovitz, Michal Smetana</h4>
+<h4 class="date">This SWP working paper was published in collaboration
+with the Peace Research Center Prague (PRCP) and last updated on:
+January 2026</h4>
+
+
+
+<div id="aim-of-the-dashboard" class="section level2">
+<h2>Aim of the Dashboard <a name="aim"></a></h2>
+<p>The interactive dashboard “Russia’s Nuclear Signaling in the War
+Against Ukraine” provides users with a comprehensive tool to track,
+analyse and understand nuclear escalation dynamics in Russia’s war
+against Ukraine. The dashboard aims to enhance the transparency and
+accessibility of nuclear signaling patterns between Russia and the West
+through interactive visualisations and data exploration features. Users
+can identify peaks and troughs in nuclear rhetoric and gain insights
+into the positions taken by key actors over time. The data covers
+nuclear-related statements and actions from autumn 2021 through January
+2025.</p>
+<p>📄 The dashboard builds on the accompanying <a href="https://www.swp-berlin.org/publications/products/arbeitspapiere/Horovitz_Smetana_et_al-Russia_Nuclear_Signalling_Chronology_Dec25_LARGE.pdf">research
+paper</a>.</p>
+<p>🎙️ For a quick introduction to the project, check out The Telegraph’s
+<a href="https://www.youtube.com/watch?v=VD-zIlSABRc&amp;t=1576s">Ukraine:
+The Latest</a> podcast.</p>
+<p>📊 The full dataset is available <a href="https://doi.org/10.7802/3009">here</a>.</p>
+<p><u><em>Timeline Visualisation</em></u>: The feature enables users to
+explore the chronological progression of nuclear-related statements and
+actions. The interactive timeline displays signals from both Russia and
+the West. Users can zoom into specific time periods, identify peaks of
+nuclear rhetoric, and track changes in escalation dynamics over
+time.</p>
+<p><u><em>Nuclear Escalation Relevant Signals (NERS)</em></u>: Signals
+are categorised as:</p>
+<p><strong>Russia</strong></p>
+<ul>
+<li><strong>R1: Affirmatory (Nuclear) Deterrence Signaling</strong>:
+Statements or communications by Russian or Belarusian officials that
+affirm, restate, or reinforce established nuclear deterrence principles,
+doctrines, or red lines, without introducing new elements or signaling
+change. In practice, this usually involves quoting the content of the
+official Russian doctrine that states the conditions under which Moscow
+would consider authorizing the use of nuclear weapons.</li>
+<li><strong>R2: Active Coercive Nuclear Signaling</strong>:
+Communicative acts in which Russian leaders, officials, or affiliated
+figures set new conditions and redlines for nuclear weapon use that are
+more specific than the general Russian nuclear doctrine or even go
+beyond the doctrine. They are formulated as conditional “if-then” or
+“unless-then” statements, where the “then” usually stands for “we will
+use nuclear weapons,” “we will consider nuclear weapons,” “we will use
+all the means available,” or “we will be met with unforeseen
+consequences.” A good example of the latter is Putin’s statement at the
+onset of the February 2022 invasion: “Whoever tries to interfere with
+us, and even more so to create threats for our country, for our people,
+must know that Russia’s response will be immediate and will lead you to
+consequences that you have never faced in your history.”</li>
+<li><strong>R3: Tacit Nuclear Signaling</strong>: Involves nuclear
+escalation-related signals that are communicated as actions rather than
+words. That includes, for example, military exercises with a nuclear
+component (e.g., Zapad), tests of nuclear or dual-capable launchers,
+non-routine movements of nuclear or dual-capable launchers, or the
+demonstrative first use of new dual-capable missiles against military or
+civilian targets in Ukraine (e.g., we would code the first use of
+Kinzhal or Oreshnik missiles in Ukraine war as “tacit nuclear
+signaling,” but we would not code a routine use of Iskander missiles as
+that is already a routine development that is no longer perceived as
+“nuclear escalation-related” in the West). In the dataset, we would
+normally code the description of the action as such (e.g., “Russia
+tested new ICBM”) or a neutral, official description of the action
+(e.g., “Russian Ministry of Defense issued a statement that Russia had
+tested a new ICBM”). Tests and exercises can also be accompanied by
+additional verbal signals that should be coded separately.</li>
+<li><strong>R4: Anticipatory Policy &amp; Posture Signaling</strong>:
+Teasing/hinting at the possibility of prospective future nuclear policy
+or posture adjustments, sometimes conditional on Western behavior,
+external events, domestic dynamics, or other developments. This includes
+verbal hints that Russia might suspend/withdraw from arms control
+treaties, revise its nuclear doctrine, resume nuclear testing, engage in
+nuclear sharing arrangements with allies, and other changes before they
+were formally adopted.</li>
+<li><strong>R5: Escalatory Policy &amp; Posture Adjustments</strong>:
+Formal modification of nuclear policy framework, strategic posture, or
+institutional arrangements governing Russian nuclear forces. This
+includes formally adopted revisions of Russian nuclear doctrine, nuclear
+sharing arrangements with Belarus, or arms control treaties status
+changes (e.g., New START suspension).</li>
+<li><strong>R6: Nuclear Escalation Risk Signaling</strong>:
+Communicative acts — usually rhetorical ordeclarative — that highlight,
+dramatize, or warn of the risk of uncontrolled nuclear escalation,
+possibly resulting from Western or Ukrainian actions, without expressing
+an intent to use nuclear weapons or alter policy. These signals possibly
+aim to amplify the perceived danger of ongoing conflict dynamics, shape
+Western threat perception, and encourage restraint through fear of
+uncontrollable consequences. The category includes, for example, many
+statements by Maria Zakharova, Dmitry Medvedev, and others, suggesting
+that Western policy could lead to uncontrollable dynamics and unforeseen
+consequences. Note that these are not explicit coercive signals in the
+sense of “if you do this, we do that;” rather, these are signals that
+shape the perceptions of uncontrollable risk, in the logic of Thomas
+Schelling’s “threat that leaves something to chance.”</li>
+<li><strong>R7: Blame Deflection</strong>: Statements that aim to
+justify the Russian nuclear escalation-relevant actions or policies
+(e.g., changes in the Russian nuclear doctrine) by framing them as
+normatively appropriate/responsible steps responding to
+inappropriate/irresponsible steps by NATO/Western countries.</li>
+<li><strong>R8: De-escalatory (nuclear) signaling</strong>: If R1–R7 are
+generally issued and/or perceived as “raising” or “maintaining” nuclear
+temperature, R8 signals lead to “lowering” nuclear temperature in the
+broader escalation dynamics. Under this logic, Russian officials usually
+issue statements such as “nuclear war should never be fought,” “we are
+committed to keeping the conflict non-nuclear,” “we want to work with
+the United States on maintaining strategic stability,” “we are open to
+new arms control talks,” or “we will maintain New START limits despite
+suspension.”</li>
+</ul>
+<p><strong>West</strong></p>
+<ul>
+<li><strong>W1: Affirmative (NATO) Deterrence Signaling</strong>:
+Communicative acts in which NATO officials and member states’
+representatives affirm, restate, or reinforce established NATO
+deterrence principles, doctrines, or red lines, without introducing new
+elements or signaling change. The focus of these statements is on the
+security and territorial integrity of member states rather than Ukraine.
+As such, the W1 category includes statements such as “we will defend
+every inch of NATO territory” or “any attack on NATO states will be met
+with a devastating response.”</li>
+<li><strong>W2: Active Deterrence of Nuclear Use</strong>: Communicative
+acts in which Western officials set Russian nuclear weapon use - against
+Ukraine or elsewhere - as a red line and actively aim at dissuading the
+Kremlin from doing that. They are formulated as conditional “if-then”
+statements, where the “if” usually stands for “any use of nuclear
+weapons” and “then” usually stands for “will be met with devastating
+response” or “will completely change our approach to this
+conflict.”</li>
+<li><strong>W3: Tacit Nuclear Signaling</strong>: Involves nuclear
+escalation-related signals that are communicated as actions rather than
+words. That includes, for example, military exercises with a nuclear
+component or tests of nuclear or dual-capable launchers. In the dataset,
+we would normally code the description of the action as such (e.g.,
+“United States tested new ICBM”) or a neutral, official description of
+the action (e.g., “U.S. Ministry of Defense issued a statement that
+Russia had tested a new ICBM”).</li>
+<li><strong>W4: Anticipatory Policy &amp; Posture Signaling</strong>:
+Teasing/hinting at the possibility of prospective future policy
+adjustments that are or can be plausibly perceived by Russia as an
+escalation. This includes verbal hints that the West might deploy troops
+to Ukraine, approve deliveries of long-range weapons or aircraft, relax
+targeting restrictions for its delivered weapons, or adopt new sanctions
+against Russia. We also include escalatory rhetoric and signals hinting
+at the need to “defeat Russia” and similar.</li>
+<li><strong>W5: Escalatory Policy &amp; Posture Adjustments</strong>:
+Formal policy adjustments that have been perceived by Russia as an
+escalation. This includes deliveries of new types of long-range weapons
+or aircraft, deliveries of relaxation of targeting restrictions for its
+delivered weapons, or adoption of new sanctions against Russia.</li>
+<li><strong>W6: Russian Nuclear Policy Assessments</strong>: Neutral
+assessments of the change and continuity in Russian nuclear posture and
+the probability of nuclear weapon use by Russia. This includes
+statements such as “we do not see any changes in Russian nuclear
+posture” or “we assess a greater risk of nuclear weapon use” under
+certain conditions.</li>
+<li><strong>W7: Stigmatizing and Norm-reinforcing Signaling</strong>:
+Communicative acts that shame Russia for not behaving “responsibly” in
+the nuclear domain (i.e., portraying Russia as a transgressor of the
+norms of nuclear order) or verbally reaffirming the validity of the
+“nuclear taboo” and other norms of nuclear order (e.g., stating that
+“nuclear war cannot be won and must never be fought.”</li>
+<li><strong>W8: De-Escalatory Signaling</strong>: Communicative acts
+that assure Russia that the West might not be implementing policy
+adjustments that are or can be plausibly perceived by Russia as an
+escalation. This includes verbal assurance that the West does not plan
+to deploy troops to Ukraine, approve deliveries of certain sensitive
+weapons (e.g., Taurus deliveries), or relax targeting restrictions for
+its delivered weapons. It might also include signals of willingness to
+“lower the nuclear temperature,” e.g., to negotiate new arms control
+agreements or implement steps to reduce nuclear risks.</li>
+</ul>
+<p><u><em>Data Table</em></u>: The feature offers an overview of all
+coded nuclear signals with dates, actors, scale values, and
+descriptions. Users can search, filter, and download the complete
+dataset for further analysis.</p>
+</div>
+<div id="methodology-and-source" class="section level2">
+<h2>Methodology and Source <a name="method"></a></h2>
+<p>The data used for this dashboard is sourced from the working paper
+“Russia’s Nuclear Signaling in the War Against Ukraine: A Chronology of
+the Biden Era” published by the Stiftung Wissenschaft und Politik (SWP),
+German Institute for International and Security Affairs in cooperation
+with the Peace Research Center Prague (PRCP).</p>
+<p>The chronology identifies, evaluates, and codes over 400 statements
+and actions related to nuclear issues. The researchers traced nuclear
+signalling between Russia and the West from autumn 2021 onwards,
+including both sides’ attempts at managing and controlling escalation
+dynamics, exercising deterrence, dissuasion, and compellence, and
+dealing with the domestic and international political implications of
+these nuclear-related processes.</p>
+<p>For the time period until February 2022, the chronology includes:</p>
+<ul>
+<li>Ex post revelations of Washington’s assessments of Moscow’s
+intentions</li>
+<li>Russia’s public statements on a potential conflict with NATO</li>
+<li>The Kremlin’s nuclear-related statements</li>
+</ul>
+<p>From February 24, 2022 onwards, the focus is primarily on tracing
+nuclear signalling between Russia and the West.</p>
+<p><strong>Actor Classification</strong>: For the sake of simplicity,
+the dashboard distinguishes between two actors only: Russia (R) and the
+West (W). Within the West, the focus is primarily on statements by
+officials from nuclear-weapon states or from NATO, as these statements
+were assessed to be more likely to lead to potential nuclear
+escalation.</p>
+<p><strong>Scale Values</strong>: The escalation scale uses a diverging
+format where negative values represent Russian actions and positive
+values represent Western actions. The absolute value indicates the
+intensity of the signal (1-8 scale), with higher values indicating more
+escalatory rhetoric.</p>
+</div>
+<div id="limitations" class="section level2">
+<h2>Limitations <a name="limitations"></a></h2>
+<ul>
+<li>The chronology does not claim to be exhaustive. It contains the
+statements and actions the authors deemed relevant based on their
+assessment.</li>
+<li>The analysis is based on publicly available information. Classified
+intelligence assessments and private diplomatic communications are not
+included unless later revealed by journalists.</li>
+<li>For the period before February 2022, the chronology purposefully
+excludes numerous contentious issues such as Russia’s demands regarding
+NATO membership for Ukraine, Western restrictions on weapons
+deployments, and threats to deploy intermediate-range nuclear
+missiles.</li>
+<li>The coding of signals involves subjective judgment, though the
+authors provide clear definitions and criteria.</li>
+<li>The two-actor simplification (Russia vs. West) may not capture the
+diverse perspectives within each bloc, particularly disagreements among
+NATO allies or within the Russian leadership.</li>
+</ul>
+</div>
+<div id="further-reading" class="section level2">
+<h2>Further Reading <a name="readings"></a></h2>
+<p><a href="https://www.swp-berlin.org/publikation/us-extended-nuclear-deterrence-in-europe-three-scenarios">Horovitz,
+L. (2025). US Extended Nuclear Deterrence in Europe: Three Scenarios.
+Crisis of Trust, Breach of Trust and Full Disengagement. SWP Comment
+32/2025, 10. Juli 2025. Berlin: Stiftung Wissenschaft und
+Politik</a></p>
+<p><a href="https://www.swp-berlin.org/publikation/nuclear-rhetoric-and-escalation-management-in-russias-war-against-ukraine">Horovitz,
+L., Stolze, M. (2023). Nuclear rhetoric and escalation management in
+Russia’s war against Ukraine: A chronology. Working Paper Research
+Division International Security, Nr. 02/2023, August 2023, 257 Seiten.
+Berlin: Stiftung Wissenschaft und Politik.</a></p>
+<p><a href="https://www.swp-berlin.org/publikation/russias-nuclear-threats-in-the-war-against-ukraine">Horovitz,
+L., Wachs, L. (2022). Russia’s Nuclear Threats in the War against
+Ukraine. Consequences for the International Order, NATO and Germany. SWP
+Comment 2022/C 29, 20. April 2022. Berlin: Stiftung Wissenschaft und
+Politik.</a></p>
+<p><a href="https://www.swp-berlin.org/publikation/russias-catch-all-nuclear-rhetoric-in-its-war-against-ukraine">Horovitz,
+L., Arndt, A. C. (2022). Russia’s Catch-all Nuclear Rhetoric in Its War
+against Ukraine. A balancing act between deterrence, dissuasion, and
+compellence strategies. SWP Comment 2022/C 60, 19. Oktober 2022. Berlin:
+Stiftung Wissenschaft und Politik.</a></p>
+</div>
+<div id="about-the-authors" class="section level2">
+<h2>About the Authors <a name="authors"></a></h2>
+<p><strong>Dr Liviu Horovitz</strong> is a Research Associate in the
+International Security Division at the German Institute for
+International and Security Affairs (SWP) and serves as Head of the
+project Strategic Threat Analysis and Nuclear (Dis-)Order (STAND).</p>
+<p><strong>Dr. Michal Smetana</strong> is an Associate Professor at the
+Institute of International Studies within the Faculty of Social Sciences
+of the Charles University in Prague. He is also the Director of the
+Peace Research Center Prague (PRCP) and serves as Head Researcher at the
+Experimental Lab for International Security Studies (ELISS).</p>
+<p><strong>Anna Clara Arndt</strong> was a co-author on three previous
+iterations of this working paper until January 2023. Since then, she has
+not been involved in the project.</p>
+<p><strong>Karina Matvienko</strong> worked on this chronology from
+September 2024 to December 2025 during her tenure at SWP. She is a
+research assistant in the project STAND in the International Security
+Division at SWP.</p>
+<p><strong>Sara Camussi</strong> worked on this chronology during her
+tenure at PRCP from September 2024 to December 2024. She is a recent
+graduate of the Double Degree Master’s programme in International
+Relations at Konstanz University and Charles University.</p>
+<p><strong>Ayesha Zafar</strong> worked on this chronology during her
+tenure at PRCP from September 2024 to March 2025. She currently serves
+as a Project Manager at the Foundation for the Rights of Future
+Generations (FRFG).</p>
+<p><strong>Martha Stolze</strong> worked on this chronology during her
+tenure at SWP from February 2023 to September 2023. She currently works
+as a research associate at the Weizenbaum Institute and is pursuing PhD
+research on Russian anti-gender propaganda and gendered disinformation
+at Freie Universität Berlin.</p>
+<p><strong>Pars Tijen Peikert</strong> worked on this chronology during
+his tenure at PRCP from January 2025 to March 2025. He is currently
+pursuing a Master’s degree in International Security at Charles
+University in Prague.</p>
+<p><strong>Alexandra von Vultejus</strong> worked on this chronology
+during her tenure at SWP from April 2025 to June 2025. She is a Master
+of International Affairs candidate at the Hertie School in Berlin,
+specializing in International Security.</p>
+<p><strong>Larissa Kirstein</strong> worked on this chronology from
+October 2025 to December 2025. She is currently working as a research
+assistant in the International Security Division at SWP.</p>
+<p>The authors would like to thank Christoph Baron and Pamela
+Skowron-Mrówka for their support with editing and formatting, as well as
+Paul Bochtler and Arthur Buliz for preparing the graphic elements of
+this paper.</p>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

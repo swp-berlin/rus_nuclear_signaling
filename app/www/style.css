@@ -1,0 +1,90 @@
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+  }
+  
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+  }
+
+table.dataTable thead th {
+    font-weight: bold;
+    background-color: #336b91;
+    color: #fff;
+  }
+  
+div.dt-buttons {
+    float: right;
+  }
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.hint--info:after {
+          background-color: var(--bs-info);
+          text-shadow: 0 -1px 0px var(--bs-info);
+        }
+.hint--info.hint--bottom:before {
+          border-bottom-color: var(--bs-info)
+        }
+.hint--info.hint--left:before {
+          border-left-color: var(--bs-info)
+        }
+.hint--info.hint--top:before {
+          border-top-color: var(--bs-info)
+        }
+.hint--info.hint--right:before {
+          border-right-color: var(--bs-info)
+        }
+
+/* Fix Plotly responsive sizing */
+.plotly {
+  width: 100% !important;
+}
+
+.js-plotly-plot, .plot-container {
+  width: 100% !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Reduce overall container padding on mobile */
+  .container-fluid {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  /* Reduce card padding on mobile */
+  .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .card-body {
+    padding: 0.75rem !important;
+  }
+  
+  /* Remove excess margins from plotly */
+  .js-plotly-plot .plotly .main-svg {
+    margin: 0 !important;
+  }
+  
+  /* Optimize plotly for mobile touch */
+  .plotly .nsewdrag {
+    cursor: grab !important;
+  }
+  
+  /* Make range slider more touch-friendly */
+  .rangeslider-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Better navbar on mobile */
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+}
