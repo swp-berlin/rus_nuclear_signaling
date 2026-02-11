@@ -1,3 +1,9 @@
+
+
+[![DOI](https://zenodo.org/badge/1155577695.svg)](https://doi.org/10.5281/zenodo.18613051) 
+
+
+
 # Russia's Nuclear Signaling in the War Against Ukraine
 
 An interactive Shiny dashboard to track, analyse, and explore nuclear escalation dynamics in Russia's war against Ukraine. Built on data from the working paper by Liviu Horovitz, Michal Smetana et al., published by [SWP](https://www.swp-berlin.org) in cooperation with the Peace Research Center Prague (PRCP).

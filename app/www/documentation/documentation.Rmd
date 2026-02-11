@@ -19,6 +19,12 @@ The interactive dashboard "Russia’s Nuclear Signaling in the War Against Ukrai
 
 📊 The full dataset is available [here](https://doi.org/10.7802/3009).
 
+💻 The source code is available on [GitHub](https://github.com/swp-berlin/rus_nuclear_signaling) [![DOI](https://zenodo.org/badge/1155577695.svg)](https://doi.org/10.5281/zenodo.18613051).
+
+
+
+
+
 
 [*Timeline Visualisation*]{.underline}: The feature enables users to explore the chronological progression of nuclear-related statements and actions. The interactive timeline displays signals from both Russia and the West. Users can zoom into specific time periods, identify peaks of nuclear rhetoric, and track changes in escalation dynamics over time.
 
