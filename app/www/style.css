@@ -40,6 +40,16 @@ div.dt-buttons {
           border-right-color: var(--bs-info)
         }
 
+/* Hover styles for Download and Reset Selection buttons */
+.dt-button:hover,
+.dt-button:focus,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background-color: #004778 !important;
+  color: #fff !important;
+  border-color: #004778 !important;
+}
+
 /* Fix Plotly responsive sizing */
 .plotly {
   width: 100% !important;
