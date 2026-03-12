@@ -19,6 +19,31 @@ div.dt-buttons {
     float: right;
   }
 
+/* Download button styling */
+.dt-buttons button.dt-button,
+.dt-buttons a.dt-button,
+.dt-buttons div.dt-button {
+    background: transparent;
+    border: 1px solid #004778;
+    color: #004778;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+
+.dt-buttons button.dt-button:hover,
+.dt-buttons a.dt-button:hover,
+.dt-buttons div.dt-button:hover,
+.dt-buttons button.dt-button:focus,
+.dt-buttons a.dt-button:focus,
+.dt-buttons div.dt-button:focus {
+    background-color: #004778;
+    border-color: #004778;
+    color: #ffffff;
+    box-shadow: none;
+  }
+
 .navbar-brand {
   color: #fff !important;
 }
