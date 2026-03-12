@@ -3,6 +3,7 @@ venv/*
 *.pdf
 *.svg
 *.png
+*.ps1
 
 02_documentation/Dokumentation.xlsx
 
