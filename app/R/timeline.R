@@ -211,7 +211,7 @@ timeline_nav <- function(id) {
           ns("reset_selection"),
           "Reset Selection",
           icon = icon("rotate-left"),
-          class = "btn-sm btn-outline-secondary"
+          class = "btn-sm btn-outline-primary"
         )
       ),
       class = "mb-2"
@@ -225,7 +225,7 @@ timeline_nav <- function(id) {
           style = "display: flex; gap: 15px; flex-wrap: nowrap; align-items: stretch;",
           # Total Signals
           div(
-            style = "display: flex; align-items: center; gap: 8px; padding: 8px 15px; background-color: #004778; color: white; border-radius: 6px; flex: 1; min-width: 0;",
+            style = "display: flex; align-items: center; gap: 8px; padding: 8px 15px; background-color: var(--bs-dark); color: white; border-radius: 6px; flex: 1; min-width: 0;",
             bs_icon("broadcast", size = "1.5em"),
             div(
               style = "flex: 1;",
@@ -678,9 +678,10 @@ timeline_server <- function(id) {
               list(
                 extend = "collection",
                 text = "Download",
+                className = "btn-primary",
                 buttons = list(
-                  list(extend = "excel", filename = "nuclear_signals"),
-                  list(extend = "csv", filename = "nuclear_signals")
+                  list(extend = "excel", filename = "nuclear_signals", className = "btn-primary"),
+                  list(extend = "csv", filename = "nuclear_signals", className = "btn-primary")
                 )
               )
             ),

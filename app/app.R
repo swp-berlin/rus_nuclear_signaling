@@ -12,6 +12,7 @@ ui <-
     theme = bs_theme(
       version = 5,
       fg = "#040404", 
+      dark = "#343a40",
       primary = "#004778", 
       secondary = "#875e00", 
       success = "#699470", 
@@ -23,8 +24,18 @@ ui <-
       bootswatch = "minty", 
       bg = "#FFFFFF",
       info = "#99B5C7",
+      "pagination-color" = "#004778",
+      "pagination-bg" = "#99B5C7",
+      "pagination-border-color" = "#99B5C7",
+      "pagination-hover-color" = "#FFFFFF",
       "pagination-disabled-bg" = "#99B5C7",
-      "pagination-hover-bg" = "#99B5C7",
+      "pagination-disabled-color" = "#004778",
+      "pagination-disabled-border-color" = "#99B5C7",
+      "pagination-hover-bg" = "#004778",
+      "pagination-hover-border-color" = "#004778",
+      "pagination-active-color" = "#FFFFFF",
+      "pagination-active-bg" = "#004778",
+      "pagination-active-border-color" = "#004778",
       
       # Customize navbar
       "navbar-bg" = "#004778", 
